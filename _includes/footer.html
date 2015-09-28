@@ -1,3 +1,10 @@
-<footer class="site-footer">
-
+<footer class="site-footer-wrapper">
+  <div class="site-footer">
+    <div class="footer-content center-text">
+      <ul class="no-bullets">
+        {% if site.title %}<li>{{ site.title }}</li>{% endif %}
+        {% if site.email %}<li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>{% endif %}
+      </ul>
+    </div>
+  </div>
 </footer>

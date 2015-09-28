@@ -1,0 +1,30 @@
+div {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  padding: 0;
+}
+
+.wrapper {
+  position: relative;
+  min-height: 100vh;
+  padding-top: $header-height;
+  padding-bottom: $footer-height;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.no-bullets {
+  list-style: none;
+}
+
+p {
+  display: inline-block;
+}

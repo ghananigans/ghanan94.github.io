@@ -3,6 +3,12 @@
 ---
 @charset "utf-8";
 
-
-// Import partials from `sass_dir` (defaults to `_sass`)
+// Normalize & Clearfix
 @import '_main/normalize';
+@import '_main/clearfix';
+
+// Main CSS files
+@import '_main/variables';
+@import '_main/main';
+@import '_main/header-footer';
+@import '_main/page';
