@@ -7,8 +7,14 @@
 @import '_main/normalize';
 @import '_main/clearfix';
 
-// Main CSS files
+// Functions/Variables
 @import '_main/variables';
+@import '_main/functions';
+
+// Fonts
+@import '_fonts/sansserifflf';
+
+// Partial CSS Files
 @import '_main/main';
 @import '_main/header-footer';
 @import '_main/page';

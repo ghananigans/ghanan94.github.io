@@ -1,0 +1,15 @@
+@function stylesheet-url($path) {
+  @return $assets-path + 'stylesheets/' + $path;
+}
+
+@function javascript-url($path) {
+  @return $assets-path + 'javascripts/' + $path;
+}
+
+@function image-url($path) {
+  @return $assets-path + 'images/' + $path;
+}
+
+@function font-url($path) {
+  @return $assets-path + 'fonts/' + $path;
+}
