@@ -1,7 +1,14 @@
 <header class="site-header-wrapper">
   <div class="site-header">
     <div class="header-content center-text">
-      <h5>Ghanan</h5>
+      <ul class="no-bullets list-inline">
+        {% assign pages = (site.pages | sort:"nav_order") %}
+        {% for p in pages %}
+          {% if p.nav_order %}
+            <li><a href="{{ p.permalink }}">{{ p.nav_title }}</a></li>
+          {% endif %}
+        {% endfor %}
+      </ul>
     </div>
   </div>
 </header>

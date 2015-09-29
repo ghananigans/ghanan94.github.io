@@ -21,8 +21,16 @@ ul {
   text-align: center;
 }
 
-.no-bullets {
-  list-style: none;
+ul {
+  &.no-bullets {
+    list-style: none;
+  }
+  
+  &.list-inline {
+    li {
+      display: inline-block;
+    }
+  }
 }
 
 p {

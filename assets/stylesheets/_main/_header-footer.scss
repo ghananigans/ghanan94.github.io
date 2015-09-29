@@ -9,7 +9,6 @@ footer {
   position: absolute;
   left: 0;
   width: 100%;
-  overflow: hidden;
 }
 
 .site-header-wrapper {
@@ -57,9 +56,15 @@ footer {
 
 .header-content {
   bottom: 0;
+  
+  ul {
+    li {
+      padding: 5px;
+      margin: 5px;
+    }
+  }
 }
 
 .footer-content {
   top: 0;
 }
-
