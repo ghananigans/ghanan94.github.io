@@ -47,6 +47,7 @@
   bottom: 0;
   
   .header-brand {
+    display: none;
     float: left;
     
     * {
@@ -59,6 +60,7 @@
     list-style: none;
     float: right;
     font-size: 0.8em;
+    margin: auto;
     
     li {
       display: block;
@@ -119,6 +121,18 @@ ul.social {
     border-left: none;
   }
 }
+@media screen and (max-width: 767px) {
+  .header-content {
+    .header-brand {
+      float: initial;
+    }
+
+    ul.header-links {
+      margin-top: 10px;
+      float: initial;
+    }
+  }
+}
 
 @media screen and (min-width: 1100px) {
   .site-header-wrapper,
@@ -136,10 +150,12 @@ ul.social {
   .header-content,
   .footer-content {
     position: relative;
-    padding: 30px 20px;
+    padding: 20px;
   }
   
   .header-content {
+    margin-top: 50px;
+    
     .header-brand {
       float: initial;
     }
@@ -148,5 +164,9 @@ ul.social {
       margin-top: 20px;
       float: initial;
     }
+  }
+  
+  .footer-content {
+    margin-bottom: 50px;
   }
 }
