@@ -40,25 +40,29 @@
   left: 0;
   width: 100%;
   padding: 10px 20px;
-  
-  & > *:first-child {
-    margin-top: 15px;
-  }
-  
-  & > *:last-child {
-    margin-bottom: 15px;
-  }
+  margin: 0;
 }
 
 .header-content {
   bottom: 0;
   
-  ul {
+  .header-brand {
+    float: left;
+    
+    * {
+      margin: 0;
+    }
+  }
+  
+  ul.header-links {
     display: inline-block;
+    list-style: none;
+    float: right;
+    font-size: 0.8em;
     
     li {
       display: block;
-      padding: 7px 10px;
+      padding: 5px 10px;
       margin: 0;
       float: left;
       border: 1px solid #ccc;
@@ -76,7 +80,7 @@
       }
       
       &.active {
-        background-color: #ddd;
+        background-color: #eee;
       }
     }
   }
@@ -86,7 +90,7 @@
   top: 0;
   font-size: 0.8em;
   
-  ul {
+  ul.footer-links {
     list-style: none;
   }
 }
@@ -132,6 +136,17 @@ ul.social {
   .header-content,
   .footer-content {
     position: relative;
-    padding: 20px;
+    padding: 30px 20px;
+  }
+  
+  .header-content {
+    .header-brand {
+      float: initial;
+    }
+    
+    ul.header-links {
+      margin-top: 20px;
+      float: initial;
+    }
   }
 }

@@ -1,7 +1,10 @@
 <header class="site-header-wrapper">
   <div class="site-header">
     <div class="header-content center-text">
-      <ul class="no-bullets list-inline clearfix">
+      <div class="header-brand">
+        <h2>{{ site.title }}</h2>
+      </div>
+      <ul class="header-links">
         {% assign pages = (site.pages | sort:"nav_order") %}
         {% for p in pages %}
           {% if p.nav_order %}
