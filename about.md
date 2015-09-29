@@ -6,4 +6,4 @@ nav_order: 2
 nav_title: About
 ---
 
-My name is Ghanan; my [github](http://github.com/ghanan94)
+My name is Ghanan, and I am a 3rd year student studying Computer Engineering.
