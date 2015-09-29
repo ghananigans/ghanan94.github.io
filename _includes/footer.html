@@ -1,9 +1,20 @@
 <footer class="site-footer-wrapper">
   <div class="site-footer">
     <div class="footer-content center-text">
-      <ul class="no-bullets">
+      <ul>
         {% if site.title %}<li>{{ site.title }}</li>{% endif %}
         {% if site.email %}<li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>{% endif %}
+        {% if site.social %}
+          <li>
+            <ul class="social">
+              {% if site.social.github %}<li><a href="{{ site.social.github }}">github</a></li>{% endif %}
+              {% if site.social.facebook %}<li><a href="{{ site.social.facebook }}">facebook</a></li>{% endif %}
+              {% if site.social.twitter %}<li><a href="{{ site.social.twitter }}">twitter</a></li>{% endif %}
+              {% if site.social.pinterest %}<li><a href="{{ site.social.pinterest }}">pinterest</a></li>{% endif %}
+              {% if site.social.linkedin %}<li><a href="{{ site.social.linkedin }}">linkedin</a></li>{% endif %}
+            </ul>
+          </li>
+        {% endif %}
       </ul>
     </div>
   </div>

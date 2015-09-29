@@ -54,9 +54,30 @@
   bottom: 0;
   
   ul {
+    display: inline-block;
+    
     li {
-      padding: 5px;
-      margin: 5px;
+      display: block;
+      padding: 7px 10px;
+      margin: 0;
+      float: left;
+      border: 1px solid #ccc;
+      border-right: none;
+      
+      &:first-child {
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+      }
+      
+      &:last-child {
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        border-right: 1px solid #ccc;
+      }
+      
+      &.active {
+        background-color: #ddd;
+      }
     }
   }
 }
@@ -64,6 +85,35 @@
 .footer-content {
   top: 0;
   font-size: 0.8em;
+  
+  ul {
+    list-style: none;
+  }
+}
+
+
+
+ul.social {
+  list-style: none;
+  display: inline-block;
+  
+  li {
+    display: block;
+    float: left;
+    
+    & > * {
+      padding: 5px;
+      vertical-align: middle;
+    }
+  }
+  
+  li {
+    border-left: 1px solid #999;
+  }
+  
+  li:first-child {
+    border-left: none;
+  }
 }
 
 @media screen and (min-width: 1100px) {
@@ -71,6 +121,7 @@
   .site-footer-wrapper {
     position: fixed;
     width: 30%;
+    height: auto;
   }
   
   .site-header,
@@ -80,6 +131,7 @@
   
   .header-content,
   .footer-content {
-  
+    position: relative;
+    padding: 20px;
   }
 }
