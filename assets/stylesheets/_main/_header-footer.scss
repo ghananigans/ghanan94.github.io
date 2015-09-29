@@ -45,63 +45,62 @@
 
 .header-content {
   bottom: 0;
-  
-  .header-brand {
-    display: none;
-    float: left;
-    
-    * {
-      margin: 0;
-    }
-  }
-  
-  ul.header-links {
-    display: inline-block;
-    list-style: none;
-    float: right;
-    font-size: 0.8em;
-    margin: auto;
-    
-    li {
-      display: block;
-      padding: 5px 10px;
-      margin: 0;
-      float: left;
-      border: 1px solid #ccc;
-      border-right: none;
-      
-      &:first-child {
-        border-top-left-radius: 5px;
-        border-bottom-left-radius: 5px;
-      }
-      
-      &:last-child {
-        border-top-right-radius: 5px;
-        border-bottom-right-radius: 5px;
-        border-right: 1px solid #ccc;
-      }
-      
-      &.active {
-        background-color: #eee;
-      }
-    }
-  }
 }
 
 .footer-content {
   top: 0;
-  font-size: 0.8em;
-  
-  ul.footer-links {
-    list-style: none;
+  font-size: 0.85em;
+}
+
+.header-brand {
+  display: none;
+  float: left;
+
+  * {
+    margin: 0;
+  }
+}
+ul.header-links {
+  display: inline-block;
+  list-style: none;
+  float: right;
+  font-size: 0.85em;
+  margin: auto;
+  padding: 0;
+
+  li {
+    display: block;
+    padding: 5px 10px;
+    margin: 0;
+    float: left;
+    border: 1px solid #ccc;
+    border-right: none;
+
+    &:first-child {
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+    }
+
+    &:last-child {
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+      border-right: 1px solid #ccc;
+    }
+
+    &.active {
+      background-color: #eee;
+    }
   }
 }
 
-
-
+ul.footer-links {
+  list-style: none;
+  padding: 0;
+}
 ul.social {
   list-style: none;
   display: inline-block;
+  padding: 0;
   
   li {
     display: block;
@@ -121,6 +120,8 @@ ul.social {
     border-left: none;
   }
 }
+
+
 @media screen and (max-width: 767px) {
   .header-content {
     .header-brand {
@@ -154,17 +155,26 @@ ul.social {
   
   .header-content {
     margin-top: 50px;
-    
-    .header-brand {
-      float: initial;
-    }
-    
-    ul.header-links {
-      float: initial;
-    }
   }
   
   .footer-content {
     margin-bottom: 50px;
+  }
+  
+  .header-brand {
+    float: initial;
+  }
+
+  ul.header-links {
+    float: initial;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .site-header-wrapper,
+  .site-footer-wrapper {
+    position: fixed;
+    width: 25%;
+    height: auto;
   }
 }
