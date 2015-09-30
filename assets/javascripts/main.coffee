@@ -2,6 +2,7 @@
 ---
 'use strict';
 
+loader = document.querySelector '.loader-wrapper'
 
 navLinkClick = (event) ->
   event.preventDefault()
@@ -9,6 +10,9 @@ navLinkClick = (event) ->
   url = srcElement.getAttribute 'href'
   ajax {
     url: url,
+    beforeSend: () ->
+      loader.classList.add 'visible'
+      return true
     success: (xmlhttp) -> 
       data = new DOMParser().parseFromString xmlhttp.responseText, "text/html"
       page = document.querySelector '.page-content-wrapper'
@@ -18,7 +22,8 @@ navLinkClick = (event) ->
         navLink.parentNode.classList.remove 'active'
       srcElement.parentNode.classList.add 'active'
       history.pushState null, null, url
-      return 
+      loader.classList.remove 'visible'
+      return
   }
   return
 

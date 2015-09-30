@@ -21,10 +21,8 @@ ul {
   padding-left: 20px;
   margin: 0;
 }
-
-.wrapper {
-  position: relative;
-  min-height: 100vh;
+p {
+  display: block;
 }
 
 .center-text {
@@ -43,6 +41,7 @@ ul {
   }
 }
 
-p {
-  display: block;
+.wrapper {
+  position: relative;
+  min-height: 100vh;
 }

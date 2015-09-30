@@ -10,11 +10,13 @@
 // Functions/Variables
 @import '_main/variables';
 @import '_main/functions';
+@import '_main/mixins';
 
 // Fonts
 @import '_fonts/sansserifflf';
 
 // Partial CSS Files
 @import '_main/main';
+@import '_main/loader';
 @import '_main/header-footer';
 @import '_main/page';

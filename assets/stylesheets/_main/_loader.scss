@@ -1,0 +1,113 @@
+.loader-wrapper {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  visibility: hidden;
+  @include vendor-prefix(transition, #{opacity 0.25s ease, visibility 0.25s ease});
+
+  &.visible {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .loader {
+    height: 10px;
+    width: 10px;
+    margin-left: -50%;
+    margin-top: -50%;
+    border-radius: 10px;
+    background-color: transparent;
+    @include vendor-prefix(animation, loader 1s infinite);
+  }
+}
+
+@include keyframes(loader) {
+  0%, 100% {
+    box-shadow: 0 -30px 0 $loader-bubble-width $loader-bubble-color,
+      21px -21px 0 0 $loader-bubble-color,
+      30px 0 0 0 $loader-bubble-color,
+      21px 21px 0 0 $loader-bubble-color,
+      0 30px 0 0 $loader-bubble-color,
+      -21px 21px 0 0 $loader-bubble-color,
+      -30px 0 0 0 $loader-bubble-color,
+      -21px -21px 0 0 $loader-bubble-color;
+  }
+  
+  12.5% {
+    box-shadow: 0 -30px 0 0 $loader-bubble-color,
+      21px -21px 0 $loader-bubble-width $loader-bubble-color,
+      30px 0 0 0 $loader-bubble-color,
+      21px 21px 0 0 $loader-bubble-color,
+      0 30px 0 0 $loader-bubble-color,
+      -21px 21px 0 0 $loader-bubble-color,
+      -30px 0 0 0 $loader-bubble-color,
+      -21px -21px 0 0 $loader-bubble-color;
+  }
+  
+  25% {
+    box-shadow: 0 -30px 0 0 $loader-bubble-color,
+      21px -21px 0 0 $loader-bubble-color,
+      30px 0 0 $loader-bubble-width $loader-bubble-color,
+      21px 21px 0 0 $loader-bubble-color,
+      0 30px 0 0 $loader-bubble-color,
+      -21px 21px 0 0 $loader-bubble-color,
+      -30px 0 0 0 $loader-bubble-color,
+      -21px -21px 0 0 $loader-bubble-color;
+  }
+  
+  37.5% {
+    box-shadow: 0 -30px 0 0 $loader-bubble-color,
+      21px -21px 0 0 $loader-bubble-color,
+      30px 0 0 0 $loader-bubble-color,
+      21px 21px 0 $loader-bubble-width $loader-bubble-color,
+      0 30px 0 0 $loader-bubble-color,
+      -21px 21px 0 0 $loader-bubble-color,
+      -30px 0 0 0 $loader-bubble-color,
+      -21px -21px 0 0 $loader-bubble-color;
+  }
+  
+  50% {
+    box-shadow: 0 -30px 0 0 $loader-bubble-color,
+      21px -21px 0 0 $loader-bubble-color,
+      30px 0 0 0 $loader-bubble-color,
+      21px 21px 0 0 $loader-bubble-color,
+      0 30px 0 $loader-bubble-width $loader-bubble-color,
+      -21px 21px 0 0 $loader-bubble-color,
+      -30px 0 0 0 $loader-bubble-color,
+      -21px -21px 0 0 $loader-bubble-color;
+  }
+  
+  62.5% {
+    box-shadow: 0 -30px 0 0 $loader-bubble-color,
+      21px -21px 0 0 $loader-bubble-color,
+      30px 0 0 0 $loader-bubble-color,
+      21px 21px 0 0 $loader-bubble-color,
+      0 30px 0 0 $loader-bubble-color,
+      -21px 21px 0 $loader-bubble-width $loader-bubble-color,
+      -30px 0 0 0 $loader-bubble-color,
+      -21px -21px 0 0 $loader-bubble-color;
+  }
+  
+  75% {
+    box-shadow: 0 -30px 0 0 $loader-bubble-color,
+      21px -21px 0 0 $loader-bubble-color,
+      30px 0 0 0 $loader-bubble-color,
+      21px 21px 0 0 $loader-bubble-color,
+      0 30px 0 0 $loader-bubble-color,
+      -21px 21px 0 0 $loader-bubble-color,
+      -30px 0 0 $loader-bubble-width $loader-bubble-color,
+      -21px -21px 0 0 $loader-bubble-color;
+  }
+  
+  87.5% {
+    box-shadow: 0 -30px 0 0 $loader-bubble-color,
+      21px -21px 0 0 $loader-bubble-color,
+      30px 0 0 0 $loader-bubble-color,
+      21px 21px 0 0 $loader-bubble-color,
+      0 30px 0 0 $loader-bubble-color,
+      -21px 21px 0 0 $loader-bubble-color,
+      -30px 0 0 0 $loader-bubble-color,
+      -21px -21px 0 $loader-bubble-width $loader-bubble-color;
+  }
+}
