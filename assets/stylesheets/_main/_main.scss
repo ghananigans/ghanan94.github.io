@@ -10,10 +10,10 @@ div {
 a {
   font-family: 'sansserifbookflfmedium', sans-serif;
   text-decoration: none;
-  color: #666;
+  color: $link-color;
   
   &:hover {
-    color: darken(#666, 60%);
+    color: $link-hover-color;
   }
 }
 
@@ -44,5 +44,5 @@ ul {
 }
 
 p {
-  display: inline-block;
+  display: block;
 }

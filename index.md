@@ -6,4 +6,4 @@ nav_order: 1
 nav_title: Home
 ---
 
-Hi, I am Ghanan :)
+### Hi, I am Ghanan!

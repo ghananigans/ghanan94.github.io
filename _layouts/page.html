@@ -4,9 +4,11 @@ layout: default
 
 <div class="page-wrapper">
   <div class="page-content-wrapper">
-    <div class="page-header">
-      {% if page.title %}<h2 class="page-title">{{ page.title }}</h2>{% endif %}
-    </div>
+    {% if page.title %}
+      <div class="page-header">
+        {% if page.title %}<h2 class="page-title">{{ page.title }}</h2>{% endif %}
+      </div>
+    {% endif %}
     
     <div class="page-content">
       
