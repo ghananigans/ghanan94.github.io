@@ -26,7 +26,12 @@ navLinkClick = (event) ->
 (()->
   navLinks = document.querySelectorAll '.header-links a'
   for navLink in navLinks
-    navLink.addEventListener 'click', navLinkClick, true
+    if navLink.addEventListener
+      # For all major browsers, except IE 8 and earlier
+      navLink.addEventListener 'click', navLinkClick, true
+    else if navLink.attachEvent
+      # For IE 8 and earlier versions
+      navLink.addEventListener 'onclick', navLinkClick
   return
 ).call this
 
