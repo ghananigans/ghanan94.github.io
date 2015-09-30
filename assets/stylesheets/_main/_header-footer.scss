@@ -123,6 +123,11 @@ ul.social {
 
 
 @media screen and (max-width: 767px) {
+  .site-header-wrapper,
+  .site-footer-wrapper {
+    height: 90px;
+  }
+  
   .header-content {
     .header-brand {
       float: initial;
