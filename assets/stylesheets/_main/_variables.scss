@@ -1,12 +1,21 @@
 $assets-path: '/assets/';
-  
+
+
+// Links
+$link-color: #337ab7;
+$link-hover-color: #3b5998;
+$text-color: #333;
+
+
+// Header/Footer
 $header-height: 125px;
 $footer-height: 125px;
 
-$page-title-color: #3b5998;
 
-$link-color: #337ab7;
-$link-hover-color: #3b5998;
-
+// Loader
 $loader-bubble-width: 3px;
-$loader-bubble-color: #000;
+$loader-bubble-color: #222;
+
+
+// Page
+$page-title-color: #3b5998;
