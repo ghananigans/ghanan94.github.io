@@ -3,7 +3,9 @@
 'use strict'
 
 loader = document.querySelector '.loader-wrapper'
-
+head = document.head
+body = document.body
+  
 navLinkClick = (event) ->
   event.preventDefault()
   srcElement = event.target || event.srcElement
@@ -71,19 +73,16 @@ pageContentSwap = (page, data) ->
   for el in styleScriptsRemove
     el.parentNode.removeChild el
 
-  styleAdd = data.querySelectorAll 'link[data-ajax-keep="false"]'
-  scriptAdd = data.querySelectorAll 'script[data-ajax-keep="false"]'
-  head = document.head
-  body = document.body
+  styles = data.querySelectorAll 'link[data-ajax-keep="false"]'
+  scripts = data.querySelectorAll 'script[data-ajax-keep="false"]'
 
-  for style in styleAdd
-    head.appendChild style
+  for style in styles
+    addStyle style
 
   page.innerHTML = data.querySelector('.page-content-wrapper').innerHTML
 
-  for script in scriptAdd
-    evalScript script
-    body.appendChild script
+  for script in scripts
+    addScript script
 
   navLinks = document.querySelectorAll '.header-links a'
 
@@ -91,6 +90,17 @@ pageContentSwap = (page, data) ->
     navLink.parentNode.classList.remove 'active'
 
   loader.classList.remove 'visible'
+  return
+
+
+addStyle = (style) ->
+  head.appendChild style
+  return
+
+
+addScript = (script) ->
+  evalScript script
+  body.appendChild script
   return
 
 
