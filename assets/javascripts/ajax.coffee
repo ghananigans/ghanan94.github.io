@@ -1,18 +1,17 @@
 ---
 ---
-'use strict';
-
+'use strict'
 
 root = exports ? this;
 
 root.ajax = (options) ->
   settings = {
-    url: '',
-    data: null,
-    method: 'get',
-    async: true,
-    beforeSend: -> return true,
-    success: -> return,
+    url: ''
+    data: null
+    method: 'get'
+    async: true
+    beforeSend: -> return true
+    success: -> return
     error: -> return
   }
 

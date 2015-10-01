@@ -1,2 +1,6 @@
-<script src="{{ "/assets/javascripts/ajax.js" | prepend: site.baseurl }}"></script>
-<script src="{{ "/assets/javascripts/main.js" | prepend: site.baseurl }}"></script>
+<script type="text/javascript" src="{{ "/assets/javascripts/ajax.js" | prepend: site.baseurl }}" data-ajax-keep="true"></script>
+<script type="text/javascript" src="{{ "/assets/javascripts/main.js" | prepend: site.baseurl }}" data-ajax-keep="true"></script>
+
+{% if page.title == 'Resume' %}
+  <script type="text/javascript" src="{{ "/assets/javascripts/resume.js" | prepend: site.baseurl }}" data-ajax-keep="false"></script>
+{% endif %}
