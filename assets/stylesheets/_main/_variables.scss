@@ -5,6 +5,7 @@ $assets-path: '/assets/';
 $link-color: #337ab7;
 $link-hover-color: #3b5998;
 $text-color: #333;
+$text-hover-color: lighten($text-color, 20%);
 
 
 // Header/Footer

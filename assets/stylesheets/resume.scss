@@ -1,5 +1,10 @@
 ---
 ---
+// Functions/Variables
+@import '_main/variables';
+@import '_main/functions';
+@import '_main/mixins';
+
 
 .resume-section {
   margin-top: 20px;
@@ -15,6 +20,10 @@
   border-bottom: 1px solid #eee;
   font-family: 'sansserifflfdemibold', 'sansserifbookflfmedium', sans-serif;
   cursor: pointer;
+  
+  &:hover {
+    color: $text-hover-color;
+  }
 }
 
 .resume-section-content {

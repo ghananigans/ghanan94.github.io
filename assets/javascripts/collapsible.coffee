@@ -7,13 +7,16 @@ delegated = document.querySelector '.wrapper'
 collapsibleClick = (event) ->
   target = event.target || event.srcElement
   
-  while target && target != delegated && !target.classList.contains 'collapsible-header'
+  while target? && target != delegated && !target.classList.contains 'collapsible-header'
     target = target.parentNode
     
-  if !target || target == delegated
+  if !target? || target == delegated
     return
   
   content = target.parentNode.querySelector '.collapsible-content'
+  
+  if !content?
+    return
   
   if content.style.display == 'none'
     content.style.display = 'block'
@@ -22,7 +25,6 @@ collapsibleClick = (event) ->
   return
 
 
-  
 if delegated.addEventListener
   delegated.addEventListener 'click', collapsibleClick, false
 else
