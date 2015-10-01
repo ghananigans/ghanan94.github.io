@@ -25,7 +25,9 @@
 
 @media screen and (max-width: 767px) {
   .page-wrapper {
-    width: 85%;
+    width: 100%;
+    padding-top: $mobile-header-height;
+    padding-bottom: $mobile-footer-height;
   }
   
   .page-header,

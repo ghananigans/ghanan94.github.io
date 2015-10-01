@@ -123,9 +123,17 @@ ul.social {
 
 
 @media screen and (max-width: 767px) {
-  .site-header-wrapper,
+  .site-header-wrapper {
+    height: $mobile-header-height;
+  }
+  
   .site-footer-wrapper {
-    height: 90px;
+    height: $mobile-footer-height;
+  }
+  
+  .site-header,
+  .site-footer {
+    width: 95%
   }
   
   .header-content {
