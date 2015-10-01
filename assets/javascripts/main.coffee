@@ -99,8 +99,21 @@ addStyle = (style) ->
 
 
 addScript = (script) ->
-  evalScript script
-  body.appendChild script
+  # evalScript script
+  type      = script.getAttribute 'type'
+  src       = script.getAttribute 'src'
+  ajaxKeep  = script.dataset.ajaxKeep
+  async     = script.async
+  defer     = script.defer
+  
+  newScript       = document.createElement 'script'
+  newScript.type  = type
+  newScript.src   = src
+  newScript.defer = defer
+  newScript.async = async
+  newScript.dataset.ajaxKeep = ajaxKeep
+
+  body.appendChild newScript
   return
 
 
