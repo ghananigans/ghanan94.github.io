@@ -1,0 +1,41 @@
+---
+---
+
+.resume-section {
+  margin-top: 20px;
+}
+
+.resume-section-header,
+.resume-section-content {
+  padding: 5px;
+}
+
+.resume-section-header {
+  font-size: 1.1em;
+  border-bottom: 1px solid #eee;
+  font-family: 'sansserifflfdemibold', 'sansserifbookflfmedium', sans-serif;
+}
+
+.resume-section-content {
+  .item {
+    margin-top: 10px;
+    
+    &:first-child {
+      margin-top: initial;
+    }
+    
+    .item-header,
+    .item-sub-header,
+    .item-content {
+      display: block;
+    }
+    
+    .item-header {
+      font-weight: bold;
+    }
+    
+    .item-sub-header {
+      text-decoration: underline;
+    }
+  }
+}

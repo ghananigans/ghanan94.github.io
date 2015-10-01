@@ -6,6 +6,11 @@
   min-height: 500px;
   padding-top: $header-height;
   padding-bottom: $footer-height;
+  line-height: 2em;
+}
+
+.page-content-wrapper {
+  margin: 20px 0;
 }
 
 .page-header,
