@@ -25,6 +25,7 @@ navLinkClick = (event) ->
     
       srcElement.parentNode.classList.add 'active'
       history.pushState null, null, url  
+      ga 'send', 'pageview'
       return
   }
   return
@@ -63,6 +64,7 @@ window.onpopstate = (event) ->
         else
           navLink.parentNode.classList.remove 'active'
       return 
+      ga 'send', 'pageview'
   }
   return
 
