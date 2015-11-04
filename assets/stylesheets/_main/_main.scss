@@ -1,26 +1,11 @@
 body {
-  font-family: 'open_sansregular', Helvetica, Arial, sans-serif;
+  font-family: 'opensans', Helvetica, Arial, sans-serif;
   font-size: 0.9em;
   color: $text-color;
 }
 
-strong,
-em {
-  font-weight: normal;
-  font-style: normal;
-}
-
 strong {
-  font-family: 'open_sanssemibold', Helvetica, Arial, sans-serif;
-}
-
-em {
-  font-family: 'open_sansitalic', Helvetica, Arial, sans-serif;
-}
-
-strong em,
-em strong {
-   font-family: 'open_sanssemibold_italic', Helvetica, Arial, sans-serif;
+  font-weight: 500;
 }
 
 a {
