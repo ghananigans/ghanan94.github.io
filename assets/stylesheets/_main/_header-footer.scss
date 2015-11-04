@@ -21,7 +21,7 @@
 .site-footer {
   display: block;
   position: relative;
-  width: 80%;
+  width: 90%;
   height: 100%;
   margin: auto;
 }
@@ -101,21 +101,21 @@ ul.social {
   list-style: none;
   display: inline-block;
   padding: 0;
-  
+
   li {
     display: block;
     float: left;
-    
+
     & > * {
       padding: 5px;
       vertical-align: middle;
     }
   }
-  
+
   li {
     border-left: 1px solid #999;
   }
-  
+
   li:first-child {
     border-left: none;
   }
@@ -126,16 +126,16 @@ ul.social {
   .site-header-wrapper {
     height: $mobile-header-height;
   }
-  
+
   .site-footer-wrapper {
     height: $mobile-footer-height;
   }
-  
+
   .site-header,
   .site-footer {
     width: 95%
   }
-  
+
   .header-content {
     .header-brand {
       float: initial;
@@ -154,26 +154,26 @@ ul.social {
     width: 30%;
     height: auto;
   }
-  
+
   .site-header,
   .site-footer {
     border: none;
   }
-  
+
   .header-content,
   .footer-content {
     position: relative;
     padding: 20px;
   }
-  
+
   .header-content {
     margin-top: 75px;
   }
-  
+
   .footer-content {
     margin-bottom: 75px;
   }
-  
+
   .header-brand {
     float: initial;
   }
