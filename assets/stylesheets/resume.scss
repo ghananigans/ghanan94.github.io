@@ -18,9 +18,8 @@
 .resume-section-header {
   font-size: 1.1em;
   border-bottom: 1px solid #eee;
-  font-family: 'sansserifflfdemibold', 'sansserifbookflfmedium', sans-serif;
   cursor: pointer;
-  
+
   &:hover {
     color: $text-hover-color;
   }
@@ -29,21 +28,17 @@
 .resume-section-content {
   .item {
     margin-top: 10px;
-    
+
     &:first-child {
       margin-top: initial;
     }
-    
+
     .item-header,
     .item-sub-header,
     .item-content {
       display: block;
     }
-    
-    .item-header {
-      font-weight: bold;
-    }
-    
+
     .item-sub-header {
       text-decoration: underline;
     }
