@@ -1,6 +1,10 @@
 .section {
   @extend %clearfix;
+  display: block;
   margin-top: 30px;
+  opacity: 0;
+  animation: sectionFadeUp ease-in 0.5s 1;
+  animation-fill-mode: forwards;
 }
 
 .section-heading,
@@ -31,5 +35,45 @@
 
   .item + .item {
     margin-top: 20px;
+  }
+}
+
+#about-me-section {
+  animation-delay: 0.6s;
+}
+
+#projects-section {
+  animation-delay: 0.8s;
+}
+
+#experiences-section {
+  animation-delay: 1.0s;
+}
+
+@-webkit-keyframes sectionFadeUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+  }
+}
+
+@keyframes sectionFadeUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
   }
 }

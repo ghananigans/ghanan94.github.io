@@ -39,3 +39,30 @@
     padding: 0px;
   }
 }
+
+.container {
+  opacity: 0;
+  animation: headerFadeIn ease-in 0.3s 1;
+  animation-delay: 0.3s;
+  animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes headerFadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes headerFadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
