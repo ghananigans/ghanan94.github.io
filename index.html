@@ -4,9 +4,34 @@ layout: default
 
 <div class="home">
 
-  <h1 class="page-heading">Posts</h1>
+  <div class="section">
+    <div class="section-heading">
+      <span class="section-title">About Me</span>
+    </div>
+    <div class="section-content">
+      <p>I am a student at the University of Waterloo, studying Computer Engineering. I am enrolled in my 3B term.</p>
+    </div>
+  </div>
 
-  <ul class="post-list">
+  <div class="section">
+    <div class="section-heading">
+      <span class="section-title">Projects</span>
+    </div>
+    <div class="section-content">
+      <div class="item">
+        <h3>NoKey</h3>
+        <p>Created a system using Objective-C and an Arduino to use an iPhone to replace a remote key by leveraging Bluetooth and a faraday cage.</p>
+      </div>
+
+      <div class="item">
+        <h3>Kirsch Edge Detector</h3>
+        <p>A Kirsch Edge Detector coded in VHDL that analyzes a 256px X 256px image, and outputs an edge map.</p>
+      </div>
+    </div>
+  </div>
+
+
+  <!--<ul class="post-list">
     {% for post in site.posts %}
       <li>
         <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
@@ -18,6 +43,7 @@ layout: default
     {% endfor %}
   </ul>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>-->
 
 </div>

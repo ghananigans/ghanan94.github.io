@@ -1,0 +1,26 @@
+.section {
+  @extend %clearfix;
+  margin-top: 40px;
+}
+
+.section-heading,
+.section-content {
+  display: inline-block;
+  float: left;
+}
+
+.section-heading {
+  width: 25%;
+}
+
+.section-title {
+  font-weight: 500;
+}
+
+.section-content {
+  width: 75%;
+
+  .item + .item {
+    margin-top: 20px;
+  }
+}
