@@ -29,10 +29,13 @@
 
 .social-icons {
   list-style: none;
+  margin: 0;
+  font-size: 200%;
+  margin-top: 25px;
 
   li {
     display: inline-block;
-    margin: 5px;
-    padding: 5px;
+    margin: 1px;
+    padding: 0px;
   }
 }

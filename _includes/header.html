@@ -2,10 +2,15 @@
   <div class="container">
     <h1>Ghanan</h1>
 
-    <h4><i>Computer Engineering student at the University of Waterloo.</i></h4>
+    <h4><i>3B Computer Engineering student at the University of Waterloo.</i></h4>
 
     <ul class="social-icons">
-      {% if site.social.github %}<li><a href="{{ site.social.github }}">github</a></li>{% endif %}
+      {% if site.social.github %}<li><a class="symbol" href="{{ site.social.github }}">circlegithub</a></li>{% endif %}
+      {% if site.social.facebook %}<li><a class="symbol" href="{{ site.social.facebook }}">circlefacebook</a></li>{% endif %}
+      {% if site.social.twitter %}<li><a class="symbol" href="{{ site.social.twitter }}">circletwitterbird</a></li>{% endif %}
+      {% if site.social.pinterest %}<li><a class="symbol" href="{{ site.social.pinterest }}">circlepinterest</a></li>{% endif %}
+      {% if site.social.linkedin %}<li><a class="symbol" href="{{ site.social.linkedin }}">circlelinkedin</a></li>{% endif %}
+      {% if site.email %}<li><a class="symbol" href="mailto:{{ site.email }}">circleemail</a></li>{% endif %}
     </ul>
   </div>
 </header>
