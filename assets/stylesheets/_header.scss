@@ -1,9 +1,9 @@
 .site-header {
   display: block;
-  background-color: #333;
+  background-color: $header-background-color;
   width: 100%;
   text-align: center;
-  padding: 100px 10px;
+  padding: 100px 50px;
 
 
   @media(min-width: 1100px) {

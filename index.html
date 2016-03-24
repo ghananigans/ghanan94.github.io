@@ -3,47 +3,96 @@ layout: default
 ---
 
 <div class="home">
-
-  <div class="section">
-    <div class="section-heading">
-      <span class="section-title">About Me</span>
-    </div>
-    <div class="section-content">
-      <p>I am a student at the University of Waterloo, studying Computer Engineering. I am enrolled in my 3B term.</p>
-    </div>
-  </div>
-
-  <div class="section">
-    <div class="section-heading">
-      <span class="section-title">Projects</span>
-    </div>
-    <div class="section-content">
-      <div class="item">
-        <h3>NoKey</h3>
-        <p>Created a system using Objective-C and an Arduino to use an iPhone to replace a remote key by leveraging Bluetooth and a faraday cage.</p>
+  <div class="sections">
+    <div class="section">
+      <div class="section-heading">
+        <span class="section-title">About Me</span>
       </div>
-
-      <div class="item">
-        <h3>Kirsch Edge Detector</h3>
-        <p>A Kirsch Edge Detector coded in VHDL that analyzes a 256px X 256px image, and outputs an edge map.</p>
+      <div class="section-content">
+        <p>I am a student at the University of Waterloo, studying Computer Engineering. I am enrolled in my 3B term.</p>
       </div>
     </div>
+
+    <div class="section">
+      <div class="section-heading">
+        <span class="section-title">Projects</span>
+      </div>
+
+      <div class="section-content">
+        <div class="item">
+          <h3><a href="https://github.com/ghanan94/BrickHack-II">NoKey</a></h3>
+          <p>Created a system using Objective-C and an Arduino to use an iPhone to replace a remote key by leveraging Bluetooth and a faraday cage.</p>
+        </div>
+
+        <div class="item">
+          <h3>RTOS Components</h3>
+          <p>Created a variety of tools in C to compliment a RTOS using semaphores, mutexes, pthreads, forking, and task management.</p>
+        </div>
+
+        <div class="item">
+          <h3>WAV Audio Player</h3>
+          <p>Coded an audio player in C, which was then loaded onto a Kiel Board (ARM Cortex-M) to play .WAV files.</p>
+        </div>
+
+        <div class="item">
+          <h3>Kirsch Edge Detector</h3>
+          <p>A Kirsch Edge Detector coded in VHDL that analyzes a 256px X 256px image, and outputs an edge map.</p>
+        </div>
+
+        <div class="item">
+          <h3>Online Storage</h3>
+          <p>Developed an online tool using Ruby on Rails to store and access files with user permissions and sharing features.</p>
+        </div>
+
+        <div class="item">
+          <h3>Online Auction</h3>
+          <p>Developed an online auction listing application using Ruby on Rails with chat and rating capabilities.</p>
+        </div>
+
+        <div class="item">
+          <h3>Chat Client</h3>
+          <p>Created a client-server model instant messaging application with individual and group chat options using C# and MySQL.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-heading">
+        <span class="section-title">Experiences</span>
+      </div>
+
+      <div class="section-content">
+        <div class="item">
+          <b>Software Developer</b>
+          <p>Jewlr</p>
+        </div>
+
+        <div class="item">
+          <b>SQL Developer/Software Architect</b>
+          <p>Canada Border Services Agency</p>
+        </div>
+
+        <div class="item">
+          <b>UNIX Systems Analyst</b>
+          <p>Sun Life Financial</p>
+        </div>
+      </div>
+    </div>
+
+    <!--<ul class="post-list">
+      {% for post in site.posts %}
+        <li>
+          <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+          <h2>
+            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          </h2>
+        </li>
+      {% endfor %}
+    </ul>
+
+
+    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>-->
+
   </div>
-
-
-  <!--<ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>-->
-
 </div>
