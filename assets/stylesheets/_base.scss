@@ -99,7 +99,7 @@ a {
     }
 
     &:hover {
-        color: lighten($link-color, 15%);;
+        color: darken($link-color, 15%);
         text-decoration: none;
     }
 }

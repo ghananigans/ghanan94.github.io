@@ -15,10 +15,10 @@ $spacing-unit:     30px;
 
 $background-color: #fdfdfd;
 $header-background-color: #00B4CC;
-
+// 005F6B 00DFFC
 $text-color:       #343838;
 $brand-color:      #008C9E;
-$link-color:       #005F6B;
+$link-color:       #008C9E;
 $title-color:      #00B4CC;
 
 $grey-color:       #828282;
@@ -51,6 +51,7 @@ $on-laptop:        800px;
         "base",
         "header",
         "content",
+        "footer",
         "home"
 ;
 
