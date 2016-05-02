@@ -42,12 +42,21 @@
   animation-delay: 0.6s;
 }
 
-#projects-section {
+#skills-section {
   animation-delay: 0.8s;
+
+  ul {
+    margin-left: 15px;
+    margin-bottom: 0;
+  }
+}
+
+#projects-section {
+  animation-delay: 1.0s;
 }
 
 #experiences-section {
-  animation-delay: 1.0s;
+  animation-delay: 1.2s;
 }
 
 @-webkit-keyframes sectionFadeUp {
